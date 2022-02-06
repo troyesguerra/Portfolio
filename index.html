@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troy Esguerra</title>
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- ADD CUSTOM CURSOR -->
+    <header>
+        <!-- Gradient Background Banner -->
+        <!-- Typing animation for starting description -->
+
+        <div class="banner">
+            <h3 class="intro">
+                Hello World!
+            </h3>
+            <h1 class="hero">
+                I'm Troy Esguerra,
+            </h1>
+            <h2>
+                a
+                <span class="txt-type" data-wait="2000"
+                    data-words='["Web Developer.", "Frontend Developer.", "Graduate Student.", "Blogger.", "Designer.", "Coffee Lover.", "Bookworm."]'>
+                </span>
+            </h2>
+
+            <a href="#contact"><button class="cta">
+                    Get in Touch
+                </button>
+            </a>
+
+            <!-- insert img -->
+        </div>
+
+    </header>
+    <!-- Sticky Navbar centered - Similar to Apple Site -->
+
+    <main>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#bio">About</a></li>
+                <!-- <li><a href="#timeline">Timeline</a></li> -->
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#joke">Happy Pill</a></li>
+                <li><a href="Resume.png" download>Resume</a></li>
+            </ul>
+        </nav>
+        <!-- Sticky sidebar socials -->
+        <aside class="socials">
+            <ul class="social-links">
+                <li><a href="https://github.com/troyesguerra" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/troyesguerra/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/troy.codes/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li><a href="https://www.facebook.com/troyesguerraa/" target="_blank"><i
+                            class="fab fa-facebook"></i></a></li>
+            </ul>
+            <div class="social-line"></div>
+        </aside>
+        <!-- Sticky icon day / night switch -->
+        <aside class="switch">
+
+        </aside>
+
+
+        <h1 id="bio">About me</h1>
+        <article class="bio">
+            <div class="about-container">
+                <section class="about">
+                    <p>
+                        Greetings online visitor, you can call me Troy! I am a Computer Science Graduate Student and a
+                        Web Developer that shifted
+                        careers from Architecture to Web Development.
+                    </p>
+                    <p>
+
+                    </p>
+                    I always had a strong desire to explore and innovate technology because I see it as the molding
+                    factor of our world's lifestyle and culture.
+                    My strong desire and passion for technology as a catalyst for change today, pushed me to fully
+                    embrace my
+                    passion for web and shift industries. For now my main purpose is to grow and establish myself as a
+                    Web Developer in the industry but eventually I plan on branching out to blockchain and Machine
+                    Learning.
+                    </p>
+
+                    <p>
+                        Read my blog on <span><a
+                                href="https://medium.com/@troyesguerra/how-the-pandemic-redirected-my-life-from-architecture-to-technology-91d3c9dddd7"
+                                target="_blank">How
+                                the Pandemic Redirected my Life from Architecture to Technology</a></span>
+                        as I expound more on how my story started from Architecture to Technology.
+                    </p>
+
+                </section>
+                <section class="profile">
+                    <img src="images/profile1.jfif" alt="" class="profile-pic">
+                </section>
+            </div>
+        </article>
+
+        <!-- <h1 id="timeline">Timeline</h1>
+        <article class="timeline">
+            <ul>
+                <li>2022</li>
+                <li>2021</li>
+                <li>2020</li>
+                <li>2019</li>
+                <li>2018</li>
+            </ul>
+            </div>
+        </article> -->
+
+
+        <h1 id="skills">Tech Stack and Tools I use</h1>
+        <article class="skills">
+            <!-- Continuous Horizontal Floating -->
+
+            <section class="row-1">
+                <div class="html-card a">
+                    <img src="images/HTML5.svg" alt="">
+                    <div class="skill-text">HTML5</div>
+                </div>
+                <div class="css-card b">
+                    <img src="images/CSS3_logo_and_wordmark.svg" alt="">
+                    <div class="skill-text">CSS3</div>
+                </div>
+                <div class="javascript-card a">
+                    <img src="images/Unofficial_JavaScript_logo_2.svg" alt="">
+                    <div class="skill-text">Javascript</div>
+                </div>
+                <div class="bootstrap-card b">
+                    <img class="bootstrap-icon" src="images/png-logos/Bootstrap-iso.png" alt="">
+                    <div class="skill-text">Bootstrap</div>
+                </div>
+                <div class="node-card a">
+                    <img src="images/Node.js_logo.svg" alt="">
+                    <div class="skill-text">NodeJS</div>
+                </div>
+            </section>
+            <section class="row-2">
+                <div class="mongodb-card b">
+                    <img src="images/MongoDB_Logo.svg" alt="">
+                    <div class="skill-text">MongoDB</div>
+                </div>
+                <div class="express-card a">
+                    <img src="images/express-js-seeklogo.com.svg" alt="">
+                    <div class="skill-text">Express</div>
+                </div>
+                <div class="git-card b">
+                    <img src="images/Git-logo.svg" alt="">
+                    <div class="skill-text">Git</div>
+                </div>
+                <div class="github-card a">
+                    <img src="images/github-octocat-logo-svg-vector.svg" alt="">
+                    <div class="skill-text">Github</div>
+                </div>
+                <div class="ejs-card b">
+                    <img src="images/ejs_icon_132422.svg" alt="">
+                    <div class="skill-text">EJS</div>
+                </div>
+            </section>
+            <section class="row-3">
+                <div class="hyper-card a">
+                    <img src="images/hyper-seeklogo.com.svg" alt="">
+                    <div class="skill-text">Hyper Terminal</div>
+                </div>
+                <div class="postman-card b">
+                    <img src="images/getpostman-icon.svg" alt="">
+                    <div class="skill-text">Postman API</div>
+                </div>
+                <div class="dev-card a">
+                    <img src="images/Dev_tools.svg" alt="">
+                    <div class="skill-text">Chrome Dev Tools</div>
+                </div>
+                <div class="python-card b">
+                    <img src="images/Python-logo-notext.svg" alt="">
+                    <div class="skill-text">Python</div>
+                </div>
+                <div class="photoshop-card a">
+                    <img src="images/Adobe_Photoshop_CC_icon.svg" alt="">
+                    <div class="skill-text">Photoshop</div>
+                </div>
+            </section>
+        </article>
+
+        <!-- <h1 id="additional-skills">Additional Skills</h1>
+        <article class="additional-skills">
+            <ul>
+                <li>Researching and Reading Documentation</li>
+                <li>Continuous passion for growth and willingess to learn</li>
+                <li>Task Organization and Time management</li>
+                <li>Video Editing</li>
+                <li>Article Writing</li>
+            </ul>
+        </article> -->
+
+        <h1 id="projects">Things I've Made</h1>
+
+        <article class="projects">
+
+            <div class="project-card-a">
+                <div class="project-description-a">
+                    <h2>Day Starter
+                    </h2>
+
+                    <p>The Day Starter App provides a random Motivational Quote and complete Weather Data that may act
+                        as a web browser's landing page. Any city or country may be searched and weather data will be
+                        fetched through a Weather API. It also shows the live local time of the Philippines.
+                    </p>
+
+
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>Weather API</li>
+                        <li>Quotes API</li>
+                    </ul>
+
+                    <div class="project-links-a">
+                        <button id="live-link"> <a href="https://day-starter.netlify.app/"
+                                target="_blank">Live</a></button>
+                        <button id="live-link"><a href="https://github.com/troyesguerra/day-starter"
+                                target="_blank">Github</a></button>
+                    </div>
+
+                </div>
+                <img src="images/day-starter.PNG" alt="">
+            </div>
+
+            <div class="project-card-b">
+                <img src="images/daily-journal.PNG" alt="">
+                <div class="project-description-b">
+                    <h2>Daily Journal</h2>
+                    <p>The Daily Journal App acts as a digital platform for writing blogs or daily diary logs. The posts
+                        are then saved to the MongoDB Atlas database as it focuses on implementing an app with EJS,
+                        Express Server, MongoDB Atlas(remote database), and Heroku.
+                    </p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>EJS</li>
+                        <li>Bootstrap</li>
+                        <li>MongoDB</li>
+                        <li>Express</li>
+                        <li>Node JS</li>
+                    </ul>
+                    <div class="project-links-b">
+                        <button id="live-link"> <a href="https://cryptic-springs-18184.herokuapp.com/"
+                                target="_blank">Live</a></button>
+                        <button id="live-link"><a href="https://github.com/troyesguerra/daily-journal"
+                                target="_blank">Github</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-a">
+                <div class="project-description-a">
+                    <h2>To Do List</h2>
+                    <p>The To-do-list is a dynamic web app that may be used to list down the daily tasks of the user. It
+                        also uses MongoDB Atlas to save the posts in a database.
+                    </p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>Bootstrap</li>
+                        <li>MongoDB</li>
+                        <li>Express</li>
+                        <li>Node JS</li>
+                    </ul>
+                    <div class="project-links-a">
+                        <button id="live-link"> <a href="https://polar-shore-55526.herokuapp.com/"
+                                target="_blank">Live</a></button>
+                        <button id="live-link"><a href="https://github.com/troyesguerra/to-do-list"
+                                target="_blank">Github</a></button>
+                    </div>
+                </div>
+                <img src="images/To-do-list.PNG" alt="">
+            </div>
+
+            <div class="project-card-b">
+                <img src="images/movie-database.PNG" alt="">
+                <div class="project-description-b">
+                    <h2>Movie Database</h2>
+                    <p>The Movie Database App is an app that can be used to check overviews and ratings of different
+                        movies of all time. It fetches data from a Movie API which is then served to the frontend
+                        depending on the user's search queries.
+                    </p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>Movie Database API</li>
+                    </ul>
+                    <div class="project-links-b">
+                        <button id="live-link"> <a href="https://movie-app-beta.netlify.app/"
+                                target="_blank">Live</a></button>
+                        <button id="live-link"><a href="https://github.com/troyesguerra/Movie-app"
+                                target="_blank">Github</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-a">
+                <div class="project-description-a">
+                    <h2>Architecture Website</h2>
+                    <p>This Architecture Website acts as a mockup for a possible Web Frontend of an Architecture and
+                        Design Firm. Frontend animations were used to enhance the User Interface of the website.
+                    </p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>TiltJS</li>
+                    </ul>
+                    <div class="project-links-a">
+                        <button id="live-link"> <a href="https://troyesguerra.github.io/ArStudio/"
+                                target="_blank">Live</a></button>
+                        <button id="live-link"><a href="https://github.com/troyesguerra/ArStudio"
+                                target="_blank">Github</a></button>
+                    </div>
+                </div>
+                <img src="images/archi-studio.PNG" alt="">
+            </div>
+
+            <div class="project-card-b">
+                <img src="images/multimedia-street.PNG" alt="">
+                <div class="project-description-b">
+                    <h2>Multimedia Street Website</h2>
+                    <p>This website was a project I made for a client (Multimedia Street). The UI and contents of the
+                        website were completely revamped as per client's objectives for the website.
+                    </p>
+                    <ul>
+                        <li>CMS</li>
+                        <li>Graphic Design</li>
+                        <li>Photoshop</li>
+                    </ul>
+                    <div class="project-links-b">
+                        <button id="live-link"> <a href="https://multimedia-street.com"
+                                target="_blank">Live</a></button>
+                        <!-- <button id="live-link"><a href="https://github.com/troyesguerra/day-starter"
+                                target="_blank">Github</a></button> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-a">
+                <div class="project-description-a">
+                    <h2>Secrets App</h2>
+                    <p>The 'SECRETS APP' lets the user register/login and post their secret anonymously into the
+                        platform. The secrets posted on the platform are only visible to registered users.
+
+                        This project explores on the different authentication strategies like: database comparison,
+                        encryption, .env and git ignore, hash functions, hash and salts, cookies and sessions, and open
+                        authentication with passport js.
+                    </p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>Bootstrap</li>
+                        <li>MongoDB</li>
+                        <li>Express</li>
+                        <li>Node JS</li>
+                    </ul>
+                    <div class="project-links-a">
+                        <!-- <button id="live-link"> <a href="https://day-starter.netlify.app/"
+                                target="_blank">Live</a></button> -->
+                        <button id="live-link"><a href="https://github.com/troyesguerra/Secrets-App"
+                                target="_blank">Github</a></button>
+                    </div>
+                </div>
+                <img id="secrets-image" src="images/secrets-app.PNG" alt="">
+            </div>
+
+        </article>
+
+        <!-- <h1>Other Projects</h1>
+        <article class="other-projects">
+
+        </article> -->
+
+        <!-- <h1 id="contact">Drop an Email and Say Hi!</h1> -->
+        <h1 id="contact">Drop an Email and Say Hi!</h1>
+        <article class="contact">
+
+            <form action="https://formsubmit.co/troyesguerra@gmail.com" method="POST">
+
+                <input type="hidden" name="_captcha" value="false">
+                <input type="email" name="contactEmail" placeholder="Email Address" required>
+                <input type="text" name="contactName" placeholder="Name" required>
+                <input type="hidden" name="_subject" value="Portfolio Contact">
+
+                <!-- <input type="hidden" name="_next" value="https://EDIT THIS THANK YOU PAGE/thankyou.html"> -->
+
+                <textarea name="contactMessage" id="contactMessage" cols="30" rows="5"
+                    placeholder="Write your message here"></textarea>
+                <button type="submit" id='contact-submit' name="contactSubmit">Send</button>
+            </form>
+
+        </article>
+
+
+        <article class="joke">
+            <h1 id="joke">Grab your Happy Pill for Today!</h1>
+            <section class="pill-wrapper">
+                <h2 id="pill">What's the worst thing about ancient history class? The teachers tend to Babylon.</h2>
+                <button id="pillButton">Another One</button>
+            </section>
+
+        </article>
+
+    </main>
+
+    <footer>
+        <!-- Designed and built by Troy Esguerra 2022 -->
+        <h6>Made with ☕ by Troy Esguerra 2022</h6>
+    </footer>
+
+    <!-- AXIOS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- SMTPJS CDN -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
