@@ -94,9 +94,6 @@ header,
   height: 100vh;
   color: #fff;
   background: linear-gradient(45deg, #5500ff, #ff9400);
-  /* background: linear-gradient(-45deg, #caf0f8 0%, #90e0ef 13%, #90e0ef 25%, #48cae4 38%, #00b4d8 50%, #0096c7 62%, #0077b6 75%, #023e8a 87%, #03045e 100%); */
-  /* background: linear-gradient(-45deg, #8ce2ee 0%, #93bae1 25%, #8984d6 50%, #7251b2 75%, #642e7c 100%); */
-  /* background: linear-gradient(45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%); */
   animation: gradient 20s ease infinite;
   background-size: 400% 400%;
 }
@@ -123,7 +120,6 @@ header,
   align-items: center;
   font-family: 'Raleway', sans-serif;
   font-weight: 900;
-  /* color: #023e8a; */
 }
 
 .name {
@@ -132,17 +128,56 @@ header,
   font-size: 9rem;
   padding: 0;
   margin: 0;
-  /* color: #fff; */
 }
 
 .banner>h2 {
   font-size: 2.5rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
-  /* text-shadow: 0.2rem 0.2rem 0.3rem rgb(0, 0, 145); */
 }
 
-/* Typewriting Cursor */
+/* 1920 X 1200 */
+
+/* @media(min-width: 1400px) {
+  .name {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 12rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .banner>h2 {
+    font-size: 5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+  }
+} */
+
+@media(max-width: 800px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .name {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 12rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .banner>h2 {
+    font-size: 5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+  }
+
+}
+
+
+/* TYPEWRITING CURSOR*/
 .txt-type>.txt {
   border-right: 0.2rem solid rgb(0, 0, 145);
 }
@@ -201,6 +236,42 @@ nav {
   padding: 1rem 2.5rem;
   font-size: 1.1rem;
   color: #fff;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.5rem;
+  height: 2rem;
+}
+
+.toggle-button .bar {
+  height: 0.3rem;
+  width: 100%;
+  background-color: #0300c4;
+  border-radius: 5px;
+}
+
+.toggle-button:hover {
+  transform: translateY(-20%);
+  transition: all 0.2s;
+}
+
+@media (max-width: 400px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar {
+    display: none;
+    position: sticky;
+    top: 1rem;
+    right: 1rem;
+  }
 }
 
 /* SOCIALS */
@@ -264,6 +335,7 @@ nav {
   font-size: 1.2rem;
   letter-spacing: 1px;
   line-height: 1.6rem;
+
   opacity: 0;
 
 }
@@ -271,6 +343,12 @@ nav {
 .about a {
   font-style: italic;
   color: #023e8a;
+  transition: color 0.2s;
+}
+
+.about a:hover {
+  font-style: italic;
+  color: #ff5631;
 }
 
 .profile {
@@ -486,9 +564,11 @@ nav {
 
   background: rgba(255, 255, 255, 0.8);
   border-radius: 16px;
+
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5.9px);
   -webkit-backdrop-filter: blur(5.9px);
+
   border: 1px solid rgba(255, 255, 255, 0.55);
 }
 
@@ -634,7 +714,7 @@ nav {
 /* CONTACT */
 
 #contact {
-  padding: 0 0 5rem 0;
+  padding: 5rem 0 5rem 0;
   font-family: 'Raleway', sans-serif;
   font-size: 3rem;
 }
@@ -709,8 +789,8 @@ form button {
 /* HAPPY PILL */
 #joke {
   font-family: 'Raleway', sans-serif;
-  font-size: 3rem;
-  color: #023e8a;
+  font-size: 2.5rem;
+  color: white;
 }
 
 .joke {
@@ -731,7 +811,7 @@ form button {
 #pill {
   padding-bottom: 1rem;
   font-family: 'Raleway', sans-serif;
-  font-size: 2rem;
+  font-size: 3.5rem;
 }
 
 #pillButton {
@@ -766,7 +846,7 @@ footer {
   color: #fff;
   padding: 0 0 5rem;
   font-weight: 300;
-  height: 30vh;
+  height: 10vh;
   padding: 1rem;
   font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;

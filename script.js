@@ -80,6 +80,15 @@ function init() {
     new TypeWriter(txtElement, words, wait);
 }
 
+// NAVBAR TOGGLE 
+const toggleButton = document.querySelector('.toggle-button');
+
+const navbarLinks = document.getElementsByClassName('navbar-links')[0];
+
+toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active');
+})
+
 // Fade In Animation
 const scrollOffset = 100;
 
@@ -114,9 +123,17 @@ window.addEventListener('scroll', () => {
     handleScrollAnimation();
 })
 
-window.addEventListener('scroll', () => {
-    handleScrollAnimation();
-})
+// Responsive Skill Label
+let current = document.querySelector('#current');
+const cards = document.querySelectorAll('.card');
+
+for (let card of cards) {
+    // console.log(card.children[1].textContent);
+    card.addEventListener('click', () => {
+        console.log(card.children[1].textContent)
+        current.textContent = card.children[1].textContent
+    })
+}
 
 // Jokes
 

@@ -11,18 +11,17 @@
         href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/hot-beverage_2615.png">
     <title>Troy Esguerra</title>
 
-    <!-- CSS Bootstrap -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
-    <!-- Stylesheet Proper -->
-
-    <link rel="stylesheet" href="styles.css">
+    <!-- CSS STYLE1 -->
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <!-- CSS STYLE 2 -->
+    <link rel="stylesheet" href="styles2.css">
 </head>
 
 <body>
     <!-- ADD CUSTOM CURSOR -->
     <header>
         <div class="banner">
+
             <h2 class="intro">
                 Hello World! I am
             </h2>
@@ -43,18 +42,32 @@
         </div>
     </header>
 
-    <main>
-        <nav>
-            <ul class="navbar">
-                <li id="sticky-link"><a href="#bio">About</a></li>
-                <!-- <li><a href="#timeline">Timeline</a></li> -->
+    <nav class="navbar" id="navbar">
+        <div class="brand-title">
+            <a href="#">troy esguerra</a>
+        </div>
+        <div class="toggle-button">
+            <span class="bar">
+            </span>
+            <span class="bar">
+            </span>
+            <span class="bar">
+            </span>
+        </div>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#bio">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#joke">Happy Pill</a></li>
-                <li><a href="Resume.png" download>Resume</a></li>
+                <li><a href="resume-troy-esguerra-1.png" download>Resume</a></li>
             </ul>
-        </nav>
+        </div>
+    </nav>
+
+
+    <main>
         <!-- Sticky sidebar socials -->
         <aside class="socials">
             <ul class="social-links">
@@ -70,10 +83,7 @@
             </ul>
             <div class="social-line"></div>
         </aside>
-        <!-- Sticky icon day / night switch -->
-        <aside class="switch">
 
-        </aside>
 
 
         <h1 id="bio">About me</h1>
@@ -85,24 +95,23 @@
                         Web Developer that shifted
                         careers from Architecture to Web Development.
                     </p>
-                    <br>
                     <p>
                         The way I see it, the main factor that molds our life today is technology. As we shifted to a
-                        more technological society in the start of this pandemic, my love for Architecture profession
+                        more technological society at the start of this pandemic, my love for the Architecture
+                        profession
                         faded
                         but my love
-                        for coding and developing sites, applications, etc grew tremendously.
-                        My strong desire to innovate people's lives through code became the backbone for my hardwork in
-                        learning and enhancing my skills in code and tech. For now my main purpose is to grow and
-                        establish
-                        myself as a
-                        Web Developer in the industry and eventually branch out to blockchain and Machine
-                        Learning.
+                        for coding and developing sites, applications, etc. grew tremendously.
+                        My strong desire to innovate people's lives through code became the backbone for my hardwork and
+                        patience in
+                        learning and enhancing my skills in code. For now my main purpose is to grow, and learn
+                        from actual industry experience.
+                        Establishing myself as a Web Developer in the industry is just the first step as
+                        my hunger for knowledge in tech branches out to blockchain and Machine
+                        Learning as well.
                     </p>
-                    <br>
-
                     <p>
-                        Read my blog on <span><a
+                        Read my blog on <span class="blog"><a
                                 href="https://medium.com/@troyesguerra/how-the-pandemic-redirected-my-life-from-architecture-to-technology-91d3c9dddd7"
                                 target="_blank">How
                                 the Pandemic Redirected my Life from Architecture to Technology</a></span>
@@ -110,89 +119,105 @@
                     </p>
 
                 </section>
-                <section class="profile js-scroll slide-right">
-                    <img src="images/profile1.jfif" alt="" class="profile-pic js-scroll slide-right">
+                <section class="profile">
+                    <img src="images/profile1.jfif" alt="" class="profile-pic">
+                    <ul>
+                        <li>
+                            Master of Science in Computer Science (On-going)
+                            <ul>
+                                <li class="inner-school">
+                                    De La Salle University (2020 - Present)
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Complete 2022 Web Developer Bootcamp
+                            <ul>
+                                <li class="inner-school">
+                                    Online Courses by Colt Steel, and Angela Yu (2021)
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Bachelor of Science in Architecture
+                            <ul>
+                                <li class="inner-school">
+                                    De La Salle - College of Saint Benilde (2013 - 2018)
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
                 </section>
             </div>
         </article>
 
-        <!-- <h1 id="timeline">Timeline</h1>
-        <article class="timeline">
-            <ul>
-                <li>2022</li>
-                <li>2021</li>
-                <li>2020</li>
-                <li>2019</li>
-                <li>2018</li>
-            </ul>
-            </div>
-        </article> -->
-
         <h1 id="skills">Tech Stack and Tools I use</h1>
+        <h2 id="current">...</h2>
         <article class="skills">
 
-            <section class="row-1">
-                <div class="html-card a">
+            <section class="row">
+                <div class="card">
                     <img src="images/HTML5.svg" alt="">
                     <div class="skill-text">HTML5</div>
                 </div>
-                <div class="css-card b">
+                <div class="card">
                     <img src="images/CSS3_logo_and_wordmark.svg" alt="">
                     <div class="skill-text">CSS3</div>
                 </div>
-                <div class="javascript-card a">
+                <div class="card">
                     <img src="images/Unofficial_JavaScript_logo_2.svg" alt="">
                     <div class="skill-text">Javascript</div>
                 </div>
-                <div class="bootstrap-card b">
+                <div class="card">
                     <img class="bootstrap-icon" src="images/bootstrap-4.svg" alt="">
                     <div class="skill-text">Bootstrap</div>
                 </div>
-                <div class="node-card a">
+                <div class="card">
                     <img src="images/Node.js_logo.svg" alt="">
                     <div class="skill-text">NodeJS</div>
                 </div>
             </section>
-            <section class="row-2">
-                <div class="mongodb-card b">
+            <section class="row">
+                <div class="card">
                     <img src="images/MongoDB_Logo.svg" alt="">
                     <div class="skill-text">MongoDB</div>
                 </div>
-                <div class="express-card a">
+                <div class="card">
                     <img src="images/express-js-seeklogo.com.svg" alt="">
                     <div class="skill-text">Express</div>
                 </div>
-                <div class="git-card b">
+                <div class="card">
                     <img src="images/Git-logo.svg" alt="">
                     <div class="skill-text">Git</div>
                 </div>
-                <div class="github-card a">
+                <div class="card">
                     <img src="images/github-octocat-logo-svg-vector.svg" alt="">
                     <div class="skill-text">Github</div>
                 </div>
-                <div class="ejs-card b">
+                <div class="card">
                     <img src="images/ejs_icon_132422.svg" alt="">
                     <div class="skill-text">EJS</div>
                 </div>
             </section>
-            <section class="row-3">
-                <div class="hyper-card a">
+            <section class="row">
+                <div class="hyper-card a card">
                     <img src="images/hyper-seeklogo.com.svg" alt="">
                     <div class="skill-text">Hyper Terminal</div>
                 </div>
-                <div class="postman-card b">
+                <div class="card">
                     <img src="images/getpostman-icon.svg" alt="">
                     <div class="skill-text">Postman API</div>
                 </div>
-                <div class="dev-card a">
+                <div class="card">
                     <img src="images/Dev_tools.svg" alt="">
                     <div class="skill-text">Chrome Dev Tools</div>
                 </div>
-                <div class="python-card b">
+                <div class="card">
                     <img src="images/Python-logo-notext.svg" alt="">
                     <div class="skill-text">Python</div>
                 </div>
-                <div class="photoshop-card a">
+                <div class="card">
                     <img src="images/Adobe_Photoshop_CC_icon.svg" alt="">
                     <div class="skill-text">Photoshop</div>
                 </div>
@@ -214,16 +239,15 @@
 
         <article class="projects">
 
-            <div class="project-card-a">
-                <div class="project-description-a js-scroll slide-left">
-                    <h2>DAY STARTER
+            <div class="project-card">
+                <div class="project-info">
+                    <h2 class="odd-h2">DAY STARTER
                     </h2>
 
                     <p>The Day Starter App provides a random Motivational Quote and complete Weather Data that may act
                         as a web browser's landing page. Any city or country may be searched and weather data will be
                         fetched through a Weather API. It also shows the live local time of the Philippines.
                     </p>
-
 
                     <ul>
                         <li>HTML</li>
@@ -233,21 +257,25 @@
                         <li>Quotes API</li>
                     </ul>
 
-                    <div class="project-links-a">
-                        <button class="live-link"> <a id="live-link" href="https://day-starter.netlify.app/"
-                                target="_blank">Live</a></button>
-                        <button class="live-link"><a id="live-link" href="https://github.com/troyesguerra/day-starter"
-                                target="_blank">Github</a></button>
+                    <div class="project-links">
+                        <a id="live-link" href="https://day-starter.netlify.app/" target="_blank"><button
+                                class="live-link">Live</button></a>
+                        <a id="live-link" href="https://github.com/troyesguerra/day-starter" target="_blank"><button
+                                class="live-link">Github</button></a>
                     </div>
 
                 </div>
-                <img src="images/day-starter.PNG" alt="">
+
+                <a href="https://day-starter.netlify.app/" target="_blank"> <img src="images/day-starter.PNG"
+                        alt="https://day-starter.netlify.app/"></a>
             </div>
 
-            <div class="project-card-b">
-                <img src="images/daily-journal.PNG" alt="">
-                <div class="project-description-b">
-                    <h2>DAILY JOURNAL</h2>
+            <div class="project-card-2">
+                <a href="https://cryptic-springs-18184.herokuapp.com/" target="_blank"><img
+                        src="images/daily-journal.PNG" alt=""></a>
+
+                <div class="project-info">
+                    <h2 class="even-h2">DAILY JOURNAL</h2>
                     <p>The Daily Journal App acts as a digital platform for writing blogs or daily diary logs. The posts
                         are then saved to the MongoDB Atlas database as it focuses on implementing an app with EJS,
                         Express Server, MongoDB Atlas(remote database), and Heroku.
@@ -262,18 +290,18 @@
                         <li>Express</li>
                         <li>Node JS</li>
                     </ul>
-                    <div class="project-links-b">
-                        <button id="live-link"> <a id="live-link" href="https://cryptic-springs-18184.herokuapp.com/"
-                                target="_blank">Live</a></button>
-                        <button id="live-link"><a id="live-link" href="https://github.com/troyesguerra/daily-journal"
-                                target="_blank">Github</a></button>
+                    <div class="project-links-2">
+                        <a id="live-link" href="https://cryptic-springs-18184.herokuapp.com/" target="_blank"><button
+                                class="live-link">Live</button></a>
+                        <a id="live-link" href="https://github.com/troyesguerra/daily-journal" target="_blank"><button
+                                class="live-link">Github</button></a>
                     </div>
                 </div>
             </div>
 
-            <div class="project-card-a">
-                <div class="project-description-a">
-                    <h2>TO-DO-LIST</h2>
+            <div class="project-card">
+                <div class="project-info">
+                    <h2 class="odd-h2">TO-DO-LIST</h2>
                     <p>The To-do-list is a dynamic web app that may be used to list down the daily tasks of the user. It
                         also uses MongoDB Atlas to save the posts in a database.
                     </p>
@@ -286,20 +314,70 @@
                         <li>Express</li>
                         <li>Node JS</li>
                     </ul>
-                    <div class="project-links-a">
-                        <button id="live-link"> <a id="live-link" href="https://polar-shore-55526.herokuapp.com/"
-                                target="_blank">Live</a></button>
-                        <button id="live-link"><a id="live-link" href="https://github.com/troyesguerra/to-do-list"
-                                target="_blank">Github</a></button>
+                    <div class="project-links">
+                        <a id="live-link" href="https://polar-shore-55526.herokuapp.com/" target="_blank"><button
+                                class="live-link">Live</button></a>
+                        <a id="live-link" href="https://github.com/troyesguerra/to-do-list" target="_blank"><button
+                                class="live-link">Github</button></a>
                     </div>
                 </div>
-                <img src="images/To-do-list.PNG" alt="">
+                <a href="https://polar-shore-55526.herokuapp.com/" target="_blank"><img src="images/To-do-list.PNG"
+                        alt=""></a>
+
             </div>
 
-            <div class="project-card-b">
-                <img src="images/movie-database.PNG" alt="">
-                <div class="project-description-b">
-                    <h2>MoOVIE DATABASE</h2>
+            <div class="project-card-2">
+
+                <a href="https://multimedia-street.com" target="_blank"><img src="images/multimedia-street.PNG"
+                        alt=""></a>
+                <div class="project-info">
+                    <h2 class="even-h2">MULTIMEDIA STREET WEBSITE</h2>
+                    <p>This website was a project I made for a client (Multimedia Street). The UI and contents of the
+                        website were completely revamped as per client's objectives for the website.
+                    </p>
+                    <ul>
+                        <li>CMS</li>
+                        <li>Graphic Design</li>
+                        <li>Photoshop</li>
+                    </ul>
+                    <div class="project-links-2">
+                        <a id="live-link" href="https://multimedia-street.com" target="_blank"><button
+                                class="live-link">Live</button></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="project-card">
+                <div class="project-info">
+                    <h2 class="odd-h2">ARCHITECTURE WEBSITE</h2>
+                    <p>This Architecture Website acts as a mockup for a possible Web Frontend of an Architecture and
+                        Design Firm. Frontend animations were used to enhance the User Interface of the website.
+                    </p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>TiltJS</li>
+                    </ul>
+                    <div class="project-links">
+                        <a id="live-link" href="https://troyesguerra.github.io/ArStudio/" target="_blank"><button
+                                class="live-link">Live</button></a>
+                        <a id="live-link" href="https://github.com/troyesguerra/ArStudio" target="_blank"><button
+                                class="live-link">Github</button></a>
+                    </div>
+                </div>
+
+                <a href="https://troyesguerra.github.io/ArStudio/" target="_blank"><img src="images/archi-studio.PNG"
+                        alt=""></a>
+            </div>
+
+            <div class="project-card-2">
+
+                <a href="https://movie-app-beta.netlify.app/" target="_blank"><img src="images/movie-database.PNG"
+                        alt=""></a>
+                <div class="project-info">
+                    <h2 class="even-h2">MOVIE DATABASE</h2>
                     <p>The Movie Database App is an app that can be used to check overviews and ratings of different
                         movies of all time. It fetches data from a Movie API which is then served to the frontend
                         depending on the user's search queries.
@@ -310,61 +388,18 @@
                         <li>JS</li>
                         <li>Movie Database API</li>
                     </ul>
-                    <div class="project-links-b">
-                        <button id="live-link"> <a id="live-link" href="https://movie-app-beta.netlify.app/"
-                                target="_blank">Live</a></button>
-                        <button id="live-link"><a id="live-link" href="https://github.com/troyesguerra/Movie-app"
-                                target="_blank">Github</a></button>
+                    <div class="project-links-2">
+                        <a id="live-link" href="https://movie-app-beta.netlify.app/" target="_blank"><button
+                                class="live-link">Live</button></a>
+                        <a id="live-link" href="https://github.com/troyesguerra/Movie-app" target="_blank"><button
+                                class="live-link">Github</button></a>
                     </div>
                 </div>
             </div>
 
-            <div class="project-card-a">
-                <div class="project-description-a">
-                    <h2>ARCHITECTURE WEBSITE</h2>
-                    <p>This Architecture Website acts as a mockup for a possible Web Frontend of an Architecture and
-                        Design Firm. Frontend animations were used to enhance the User Interface of the website.
-                    </p>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JS</li>
-                        <li>TiltJS</li>
-                    </ul>
-                    <div class="project-links-a">
-                        <button id="live-link"> <a id="live-link" href="https://troyesguerra.github.io/ArStudio/"
-                                target="_blank">Live</a></button>
-                        <button id="live-link"><a id="live-link" href="https://github.com/troyesguerra/ArStudio"
-                                target="_blank">Github</a></button>
-                    </div>
-                </div>
-                <img src="images/archi-studio.PNG" alt="">
-            </div>
-
-            <div class="project-card-b">
-                <img src="images/multimedia-street.PNG" alt="">
-                <div class="project-description-b">
-                    <h2>MULTIMEDIA STREET WEBSITE</h2>
-                    <p>This website was a project I made for a client (Multimedia Street). The UI and contents of the
-                        website were completely revamped as per client's objectives for the website.
-                    </p>
-                    <ul>
-                        <li>CMS</li>
-                        <li>Graphic Design</li>
-                        <li>Photoshop</li>
-                    </ul>
-                    <div class="project-links-b">
-                        <button id="live-link"> <a id="live-link" href="https://multimedia-street.com"
-                                target="_blank">Live</a></button>
-                        <!-- <button id="live-link"><a href="https://github.com/troyesguerra/day-starter"
-                                target="_blank">Github</a></button> -->
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card-a">
-                <div class="project-description-a">
-                    <h2>SECRETS APP</h2>
+            <div class="project-card">
+                <div class="project-info">
+                    <h2 class="odd-h2">SECRETS APP</h2>
                     <p>The 'SECRETS APP' lets the user register/login and post their secret anonymously into the
                         platform. The secrets posted on the platform are only visible to registered users.
 
@@ -381,14 +416,13 @@
                         <li>Express</li>
                         <li>Node JS</li>
                     </ul>
-                    <div class="project-links-a">
-                        <!-- <button id="live-link"> <a href="https://day-starter.netlify.app/"
-                                target="_blank">Live</a></button> -->
-                        <button id="live-link"><a id="live-link" href="https://github.com/troyesguerra/Secrets-App"
-                                target="_blank">Github</a></button>
+                    <div class="project-links">
+
+                        <a id="live-link" href="https://github.com/troyesguerra/Secrets-App" target="_blank"><button
+                                class="live-link">Github</button></a>
                     </div>
                 </div>
-                <img id="secrets-image" src="images/secrets-app.PNG" alt="">
+                <img class="secrets-image" src="images/secrets-app.PNG" alt="">
             </div>
 
         </article>
@@ -399,22 +433,30 @@
         </article> -->
 
         <!-- <h1 id="contact">Drop an Email and Say Hi!</h1> -->
-        <h1 id="contact">Drop an Email and Say Hi!</h1>
-        <article class="contact">
 
-            <form action="https://formsubmit.co/troyesguerra@gmail.com" method="POST">
+        <article class="contact-section">
+            <h1 id="contact">Contact</h1>
 
-                <input type="hidden" name="_captcha" value="false">
-                <input type="email" name="contactEmail" placeholder="Email Address" required>
-                <input type="text" name="contactName" placeholder="Name" required>
-                <input type="hidden" name="_subject" value="Portfolio Contact">
+            <div class="contact">
+                <form action="https://formsubmit.co/troyesguerra@gmail.com" method="POST">
 
-                <!-- <input type="hidden" name="_next" value="https://EDIT THIS THANK YOU PAGE/thankyou.html"> -->
+                    <div class="left-area">
+                        <h2>DROP AN EMAIL AND SAY HI!</h2>
+                        <p>Lets chit-chat about different ways we can start developing your website!</p>
+                    </div>
 
-                <textarea name="contactMessage" id="contactMessage" cols="30" rows="5"
-                    placeholder="Write your message here"></textarea>
-                <button type="submit" id='contact-submit' name="contactSubmit">Send</button>
-            </form>
+                    <div class="inputs">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="email" name="contactEmail" placeholder="Email Address" required>
+                        <input type="text" name="contactName" placeholder="Name" required>
+                        <input type="hidden" name="_subject" value="Portfolio Contact">
+                        <textarea name="contactMessage" id="contactMessage" cols="30" rows="5"
+                            placeholder="Write your message here"></textarea>
+                        <button type="submit" id='contact-submit' name="contactSubmit">Send</button>
+                    </div>
+
+                </form>
+            </div>
 
         </article>
 
@@ -422,7 +464,8 @@
         <article class="joke">
             <h1 id="joke">Grab your Happy Pill for Today!</h1>
             <section class="pill-wrapper">
-                <h2 id="pill">What's the worst thing about ancient history class? The teachers tend to Babylon.</h2>
+                <h2 id="pill">What's the worst thing about ancient history class? The teachers tend to
+                    Babylon.</h2>
                 <button id="pillButton">Another One</button>
             </section>
 
@@ -431,17 +474,11 @@
     </main>
 
     <footer>
-        <!-- Designed and built by Troy Esguerra 2022 -->
         <h6>Made with ☕ by Troy Esguerra 2022</h6>
     </footer>
 
     <!-- AXIOS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
-    <!-- Bootstrap JS
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script> -->
 
     <script src="script.js"></script>
 </body>
