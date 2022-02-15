@@ -134,6 +134,7 @@ header {
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(13px);
     -webkit-backdrop-filter: blur(13px);
+
 }
 
 .brand-title {
@@ -1059,7 +1060,7 @@ footer .h6 {
 @media(min-width: 375px) and (max-width: 424px) {
     .projects {
         padding: 2rem 0;
-        width: 16.5rem;
+        width: 19.5rem;
     }
 
     .projects .odd-h2 {
